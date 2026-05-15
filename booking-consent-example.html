@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resident Booking Confirmation (Sample) — Rent Depot</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+       background:#f5f5f5;color:#333;padding:24px;line-height:1.55}
+  .card{background:#fff;border-radius:12px;padding:32px;max-width:680px;
+        margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+  .logo{font-size:18px;font-weight:700;color:#1a56db;margin-bottom:18px}
+  h1{font-size:22px;font-weight:700;margin-bottom:8px}
+  p{font-size:14px;color:#444;margin-bottom:10px}
+  .sample-banner{background:#eef2ff;border:1px dashed #818cf8;border-radius:8px;
+       padding:12px 14px;margin-bottom:20px;font-size:12px;color:#3730a3;line-height:1.5}
+  .summary{background:#f0f4ff;border:1px solid #c7d2fe;border-radius:8px;
+       padding:14px 16px;margin-bottom:20px;font-size:14px;color:#1e293b}
+  .summary .row{margin-bottom:6px}
+  .summary .row:last-child{margin-bottom:0}
+  .summary .lbl{display:inline-block;width:90px;color:#64748b;font-weight:600;font-size:12px;
+       text-transform:uppercase;letter-spacing:0.03em}
+  .consent{background:#f0f4ff;border:1px solid #c7d2fe;border-radius:8px;
+           padding:14px 16px;margin-bottom:4px;font-size:13px;color:#1e293b}
+  .consent input[type=checkbox]{margin-right:8px;vertical-align:middle}
+  .consent .optional-tag{display:inline-block;font-size:11px;font-weight:700;
+           text-transform:uppercase;letter-spacing:0.04em;color:#1a56db;
+           background:#dbe4ff;border-radius:4px;padding:2px 7px;margin-bottom:8px}
+  .not-required{font-size:12px;color:#475569;margin:10px 0 4px;line-height:1.5}
+  button{margin-top:18px;width:100%;padding:14px;background:#1a56db;color:#fff;
+         border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer}
+  button:hover{background:#1648c7}
+  .meta{font-size:12px;color:#888;margin-top:24px;padding-top:14px;border-top:1px solid #eee}
+  a{color:#1a56db}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">Rent Depot LLC</div>
+
+  <div class="sample-banner">
+    This is a representative sample of the resident appointment booking
+    confirmation page. The live page requires a secure, time-limited
+    appointment token sent directly to the resident via AppFolio.
+  </div>
+
+  <h1>Confirm Your Appointment</h1>
+  <p>Please review your maintenance appointment details below and confirm.</p>
+
+  <div class="summary">
+    <div class="row"><span class="lbl">Address</span> 1420 Maple Street, Apt 3B, Evansville, IN 47714</div>
+    <div class="row"><span class="lbl">Date</span> Thursday, May 21, 2026</div>
+    <div class="row"><span class="lbl">Time</span> 1:00 PM – 3:00 PM</div>
+    <div class="row"><span class="lbl">Service</span> Kitchen faucet repair</div>
+  </div>
+
+  <div class="consent">
+    <div class="optional-tag">Optional</div>
+    <label style="font-weight:500">
+      <input type="checkbox" id="sms-consent" name="sms_consent" value="yes">
+      Yes, send me an SMS reminder from Rent Depot LLC before my appointment.
+      (Optional)
+    </label>
+    <p class="not-required">
+      SMS consent is not required to confirm your appointment. You can confirm
+      without checking this box.
+    </p>
+    <p class="not-required">
+      If you opt in: message and data rates may apply. Reply <strong>STOP</strong>
+      to opt out, <strong>HELP</strong> for help. See our
+      <a href="privacy.html">Privacy Policy</a> and
+      <a href="terms.html">SMS Terms of Service</a>.
+    </p>
+  </div>
+
+  <button type="button" onclick="document.getElementById('done').style.display='block'">
+    Confirm Appointment
+  </button>
+
+  <p id="done" style="display:none;margin-top:16px;padding:12px 14px;background:#f0fdf4;
+     border:1px solid #86efac;border-radius:8px;color:#15803d;font-size:13px">
+    Sample only — on the live page this confirms the appointment whether or not
+    the SMS reminder box is checked.
+  </p>
+
+  <div class="meta">Rent Depot LLC · PO Box 4, Evansville, IN 47701 · 844-736-8337</div>
+</div>
+</body>
+</html>
