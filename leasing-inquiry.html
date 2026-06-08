@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rental Inquiry — Rent Depot</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.5; }
+  h1 { font-size: 1.5rem; }
+  .brand { font-weight: 600; color: #555; }
+  label { display: block; margin: 16px 0 4px; font-weight: 600; }
+  input[type=text], input[type=tel] { width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+  .consent { margin: 20px 0; padding: 16px; background: #f6f8fa; border-radius: 8px; }
+  .consent label { display: flex; align-items: flex-start; gap: 10px; font-weight: 400; }
+  .fine { font-size: 0.85rem; color: #555; }
+  button { margin-top: 20px; padding: 12px 20px; font-size: 1rem; background: #1a5e2a; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+  footer { margin-top: 32px; font-size: 0.8rem; color: #777; border-top: 1px solid #eee; padding-top: 16px; }
+  a { color: #1a5e2a; }
+</style>
+</head>
+<body>
+  <p class="brand">Rent Depot LLC</p>
+  <h1>Rental Inquiry</h1>
+  <p>Tell us how to reach you about the rental you're interested in. SMS updates
+     about your inquiry are an optional convenience — opting in is entirely up to you.</p>
+
+  <form>
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" autocomplete="name">
+
+    <label for="property">Property you're interested in</label>
+    <input type="text" id="property" name="property" placeholder="Address or listing">
+
+    <label for="mobile">Mobile number</label>
+    <input type="tel" id="mobile" name="mobile" autocomplete="tel" placeholder="Optional">
+
+    <div class="consent">
+      <label>
+        <input type="checkbox" id="sms-consent" name="sms-consent">
+        <span>Yes, I would like to receive SMS messages from Rent Depot LLC about my
+        rental inquiry at the mobile number above, including a link to schedule a tour
+        and follow-ups about availability and my application. (Optional)</span>
+      </label>
+    </div>
+
+    <p class="fine">Consent to receive SMS is not required to inquire about or apply for
+      a rental from Rent Depot LLC. If you do not opt in, we will follow up by phone or
+      email instead.</p>
+
+    <p class="fine">If you opt in: message frequency varies (typically 1–5 messages per
+      inquiry). Message and data rates may apply. Reply <strong>STOP</strong> at any
+      time to opt out, or <strong>HELP</strong> for help. We do not sell, rent, or share
+      your mobile information with third parties. See our
+      <a href="https://caseycspivey.github.io/rentdepot-compliance/privacy.html">Privacy Policy</a>
+      and
+      <a href="https://caseycspivey.github.io/rentdepot-compliance/terms.html">SMS Terms of Service</a>.</p>
+
+    <button type="submit">Submit Inquiry</button>
+  </form>
+
+  <footer>
+    Rent Depot LLC · PO Box 4, Evansville, IN 47701 · 844-736-8337
+  </footer>
+</body>
+</html>
